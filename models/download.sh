@@ -1,0 +1,11 @@
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_hugo_01_iter116.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_hugo_01_iter54.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_hugo_04_iter41.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_uniward_01_iter111.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_uniward_01_iter75.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_uniward_04_iter43.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_uniward_04_iter9.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_wow_01_iter108.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_wow_01_iter52.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_wow_04_iter34.t7
+wget -c http://info.iut-bm.univ-fcomte.fr/staff/couturie/Code/DL/models/model_wow_04_iter41.t7
