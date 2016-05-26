@@ -1,7 +1,7 @@
 # Steganalysis via a Convolutional Neural Network using Large Convolution Filters
 
 This project shows the code of the following paper.
-https://arxiv.org/1570341
+http://arxiv.org/abs/1605.07946
 
 The authors of this paper are:
 Jean-François Couchot, Raphaël Couturier, Christophe Guyeux and Michel Salomon
