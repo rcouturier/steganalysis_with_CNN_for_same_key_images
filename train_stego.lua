@@ -1,20 +1,3 @@
--- th train_stego.lua --cover images/cover_pgm  --stego images/stego_hugo_0.4  --start_test 1 --end_test 1000 --network models/model_hugo_04_iter41.t7 -p cuda 
-
-
--- th train_stego.lua --cover images/cover_pgm  --stego images/stego_wow_0.1  --start_test 1 --end_test 1000 --network models/model_wow_01_iter52.t7 -p cuda
-
-
--- th train_stego.lua --cover images/cover_jpg  --stego images/stego_uniward_0.1  --start_test 1 --end_test 1000 --network models/model_uniward_01_iter75.t7 -p cuda --ext .jpg
-
-
-
-
-
--- th train_stego.lua --cover images/cover_pgm  --stego images/stego_hugo_0.4  --start_train 1 --end_train 4000 --start_test 7001 --end_test 8000 -p cuda  -b 100
-
-
-
-
 ----------------------------------------------------------------------
 -- This script shows how to train different models on the steganalysis
 --
@@ -115,8 +98,8 @@ if opt.network == '' then
 else
    print('<trainer> reloading previously trained network')
    model = torch.load(opt.network)
-	 model=model:float()
-	 print('aaaaaaaaaaaaaaaaaaaa')
+   model=model:float()
+
 end
 
 

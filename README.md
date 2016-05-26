@@ -16,7 +16,14 @@ In order to download many cover and stego images, we need to go in the images di
 We suppose that images are named 1, 2, 3 etc
 
 
+Here is the description of the CNN used for the steganalysis:
+![alt text](doc/cnn.png "CNN for steganalysis")
+
+
+
 # Some examples
+
+First you need to have cover and stego images and the pre-trained models
 
 th train_stego.lua --cover images/cover_pgm  --stego images/stego_hugo_0.4  --start_test 1 --end_test 1000 --network models/model_hugo_04_iter41.t7 -p cuda 
 
@@ -35,4 +42,5 @@ The interesting parameters are (take care of the double - for some parameters):
 - --network: use a pre-trained model
 - --end_test: number of the last image to test
 - --p cuda: to run on cuda (necessary with our pretrained networks)
-- -b: size of the batch (100 seems good)
+- -b: size of the batch for the training part (100 seems good), 
+- --ext .jpg: if you want to use jpg images
