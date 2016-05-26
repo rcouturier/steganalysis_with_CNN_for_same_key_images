@@ -20,6 +20,18 @@ Here is the description of the CNN used for the steganalysis:
 ![alt text](doc/cnn.png "CNN for steganalysis")
 
 
+Evolution of the training and testing with HUGO (payload=0.4)
+![alt text](doc/Training_hugo_04.png "HUGO payload=0.4")
+
+Evolution of the training and testing with HUGO (payload=0.1)
+![alt text](doc/Training_hugo_01.png "HUGO payload=0.1")
+
+Other examples of training and testing are in the paper
+
+
+.. image::  http://bilbo.iut-bm.univ-fcomte.fr:9001/up/1dfae9149eacceaf66e8a50feadea1bb.pres_equipe 
+   :align: center
+   :width: 800px
 
 # Some examples
 
