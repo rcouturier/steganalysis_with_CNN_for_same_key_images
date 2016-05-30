@@ -37,14 +37,15 @@ local opt = lapp[[
    --end_test	      (default 1000)        index of last image for test
    --ext	      (default ".pgm")      extention of the image	 
    -d,--devid         (default 1)           device ID (if using CUDA)
-   --seed	      (default 1)          default seed
+   --seed	      (default 1)           default seed
+
 ]]
 
 
 
 
 -- fix seed
-torch.manualSeed(seed)
+torch.manualSeed(opt.seed)
 
 
 -- threads
@@ -58,7 +59,7 @@ if opt.type == 'cuda' then
    require 'cunn'
    cutorch.setDevice(opt.devid)
    print(sys.COLORS.red ..  '==> using GPU #' .. cutorch.getDevice())
-   cutorch.manualSeed(seed)
+   cutorch.manualSeed(opt.seed)
 --   nn.SpatialConvolutionMM = nn.SpatialConvolution
 end
 
