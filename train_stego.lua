@@ -37,7 +37,7 @@ local opt = lapp[[
    --end_test	      (default 1000)        index of last image for test
    --ext	      (default ".pgm")      extention of the image	 
    -d,--devid         (default 1)           device ID (if using CUDA)
-   --seed	      (default 1")          default seed
+   --seed	      (default 1)          default seed
 ]]
 
 
