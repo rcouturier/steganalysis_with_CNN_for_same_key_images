@@ -21,7 +21,7 @@ local opt = lapp[[
    -s,--save          (default "logs")      subdirectory to save logs
    -n,--network       (default "")          reload pretrained network
    -o,--optimization  (default "SGD")       optimization: SGD
-   -r,--learningRate  (default 0.05)        learning rate, for SGD only
+   -r,--learningRate  (default 0.005)        learning rate, for SGD only
    -b,--batchSize     (default 10)          batch size
    -m,--momentum      (default 0)           momentum, for SGD only
    -i,--maxIter       (default 3)           maximum nb of iterations per batch, for LBFGS
@@ -37,14 +37,14 @@ local opt = lapp[[
    --end_test	      (default 1000)        index of last image for test
    --ext	      (default ".pgm")      extention of the image	 
    -d,--devid         (default 1)           device ID (if using CUDA)
-
+   --seed	      (default 1")          default seed
 ]]
 
 
 
 
 -- fix seed
-torch.manualSeed(331)
+torch.manualSeed(seed)
 
 
 -- threads
@@ -58,7 +58,7 @@ if opt.type == 'cuda' then
    require 'cunn'
    cutorch.setDevice(opt.devid)
    print(sys.COLORS.red ..  '==> using GPU #' .. cutorch.getDevice())
-   cutorch.manualSeed(331)
+   cutorch.manualSeed(seed)
 --   nn.SpatialConvolutionMM = nn.SpatialConvolution
 end
 
