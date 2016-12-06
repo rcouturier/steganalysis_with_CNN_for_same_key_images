@@ -1,6 +1,5 @@
-Steganalysis via a Convolutional Neural Network using Large
-Convolution Filters for Embedding Process with Same Stego Key
-===============================================================================
+Steganalysis via a Convolutional Neural Network using Large Convolution Filters for Embedding Process with Same Stego Key
+=========================================================================================================================
 
 This project shows the code of the following paper.
 http://arxiv.org/abs/1605.07946
